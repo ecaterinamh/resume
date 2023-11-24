@@ -1,0 +1,112 @@
+.project-card {
+    width: 18rem;
+    height: 30rem;
+    background-color: rgba(105, 105, 105, 0.157);
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover{
+    border: 2px solid white;
+    box-shadow: 0 10px 10px 4px rgba(132, 131, 131, 0.5);
+    position: relative;
+    top: -6px;
+}
+
+.project-content{
+    width: 100%;
+    height: auto;
+}
+
+.project-image {
+    border-radius: unset;
+    object-fit: cover;
+    height: 12rem;
+    border-radius: 5px;
+}
+
+.project-content a{
+    text-decoration: none;
+}
+
+.project-body {
+    height: 11rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+.links {
+   width: 100%;
+   height: auto;
+   position: relative;
+   bottom: 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.code a, .live a{
+    color: white;
+    text-decoration: none;
+}
+
+.live{
+    margin-right: 0.4rem;
+}
+
+.live, .code {
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgb(152, 151, 151);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 0.2rem 0.05rem;
+    text-align: center;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.code:hover, .live:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+    box-shadow: 0 8px 10px 0 rgba(162, 162, 162, 0.37);
+}
+
+@media only screen and (max-width:1210px){
+    .project-card {
+        width: 22rem;
+    }
+
+}
+
+@media only screen and (max-width: 980px){
+    .project-card {
+        width: 35rem;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+    .project-card {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .project-card {
+        width: 20rem;
+    }
+}
+
+
+
+
+
