@@ -160,4 +160,8 @@ input, textarea {
         max-width: 29rem;
         min-width: 24rem;
     }
+
+    .cover-picture{
+        height: 5rem;   
+    }
 }
