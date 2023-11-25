@@ -6,7 +6,6 @@ export default function ProjectCard({title, description, image, liveUrl, codeUrl
   return (
     <Col size={12} sm={6} md={3} className="project-card">
       <div className='project-content'>
-        
         <img className='project-image' src={image} alt='pictureproject'/>
         <div className='project-body'>
           <h4>{title}</h4>

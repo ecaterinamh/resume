@@ -22,7 +22,8 @@ Looking forward for an opportunity to work in web development industry where I c
                                     <div className='button-resume'><a href="../resources/Resume-Mihai Ecaterina-4.pdf" target="_blank" download="" ><i className="fas fa-download px-2"></i>DOWNLOAD MY RESUME</a></div>
                                 </div>
                                 <div className='picture'>
-                                    <img src={whiteandblack} alt='profilepicture'/>
+                                    
+                                    <div className='contour-picture'><img className='profile-picture' src={whiteandblack} alt='profilepicture'/></div>
                                 </div>
                         </Col>
                     </Row>

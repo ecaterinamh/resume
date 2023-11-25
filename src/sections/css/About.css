@@ -49,7 +49,7 @@
 }
 
 .content-card {
-    width: 60%;
+    width: 58%;
 }
 
 h2, h4 {
@@ -61,16 +61,37 @@ h2, h4 {
 }
 
 .picture {
-   width: 35%;
+   width: 40%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
 
-img {
-    width: 100%;
-    height: 16rem;
+.profile-picture {
+    width: 18rem;
+    height: 15rem;
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
+    position: relative;
+    left: -0.8rem;
+}
+
+.contour-picture{
+    width: 18.2rem;
+    height: 15.5rem;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 44%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 0.8rem;
 }
 
 .button-resume {
@@ -125,6 +146,16 @@ img {
         width: 60%;
         height: auto;
     }
+
+    .profile-picture {
+        width: 18rem;
+        height: 14rem;
+    }
+
+    .contour-picture{
+        width: 18rem;
+        height: 14rem;
+    }
 }
 
 @media only screen and (max-width: 840px) {
@@ -134,18 +165,35 @@ img {
     }
 
     .picture{
-        width: 75%;
+        width: 80%;
     }
     
-    .img {
-        height: 16rem;
+    .profile-picture {
+        width: 18rem;
+        height: 14rem;
+    }
+
+    .contour-picture{
+        width: 18rem;
+        height: 14rem;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 480px) {
     .picture{
         width: 95%;
     }
+
+    .profile-picture {
+        width: 14rem;
+        height: 11rem;
+    }
+
+    .contour-picture{
+        width: 14rem;
+        height: 11rem;
+    }
+    
     
 }
 

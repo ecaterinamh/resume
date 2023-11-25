@@ -107,6 +107,17 @@ input, textarea {
 }
 
 
+.cover-picture{
+    width: 100%;
+    height: 9rem;
+    background-image: url('../../resources/photos/kevin-canlas-QYHehJ9Iovs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    border-radius: 5px;
+}
+
+
 
 
 
