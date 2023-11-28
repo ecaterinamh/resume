@@ -36,7 +36,7 @@ This a short preview of the project's view on mobile, tablet and desktop devices
 
 DESKTOP SCREEN                                                             
 :--------------------------------------------------------------------------:
-| <img src="./src/resources/photos/resume.png" >            |
+| <img src="./src/resources/photos/desktop-preview.png" >            |
 
 
 

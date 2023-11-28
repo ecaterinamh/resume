@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProjectCard from "../components/ProjectCard";
 import perfume from "../resources/photos/perfume.png";
-import resume from "../resources/photos/resume.png";
+import desktopPreview from "../resources/photos/desktop-preview.png";
 
 export default function Portfolio() {
   const projects = [
@@ -14,7 +14,7 @@ export default function Portfolio() {
       title: "Portfolio",
       description:
         "Portfolio is a SPA which includes a short resume about my ambitious learning path, skills and projects. In order to create it, I used React, React Bootstrap, JS, NodeJs, npm, Bootstrap, CSS3 and HTML5. ",
-      image: resume,
+      image: desktopPreview,
       liveUrl: "https://resume-project-me.netlify.app/",
       codeUrl: "https://github.com/ecaterinamh/resume",
     },
