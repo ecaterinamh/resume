@@ -77,7 +77,6 @@ export default function Contact() {
                 <textarea
                   placeholder="message"
                   rows="3"
-                  cols="41"
                   required
                 ></textarea>
                 <div class="btn-container">

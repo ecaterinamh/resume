@@ -184,16 +184,21 @@ textarea {
   }
 
   .personal-contact {
-    width: 34rem;
-    height: 35rem;
+    width: 100%;
+    height: 39rem;
+    text-align: justify;
   }
 
   .form-contact {
-    width: 33rem;
-    height: 33.5rem;
+    width: 100%;
+    height: 34rem;
   }
 
   .cover-picture {
     height: 5rem;
+  }
+
+  #button-form{
+    width: 9rem;
   }
 }
