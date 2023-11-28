@@ -71,7 +71,7 @@ export default function Portfolio() {
         <Row className="portfolio-row">
           <h2 className="portfolio-title">
             {" "}
-            PORTOFOLIO<span class="line"> ______</span>
+            PORTFOLIO<span class="line"> ______</span>
           </h2>
           <div className="projects-list">
             {projects.map((project) => {
