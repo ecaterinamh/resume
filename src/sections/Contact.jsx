@@ -23,9 +23,8 @@ export default function Contact() {
                 I would be glad to connect with you on LinkedIn or GitHub.
               </h5>
               <h6>
-                I'm interested in any new opportunity to work in the web
-                development industry. Whether you have a question or just want
-                to say hi, I'll try my best to get back to you!{" "}
+                I'm looking for an opportunity to work in the web
+                development industry, meet new professionals, evolve and share knowledge.{" "}
               </h6>
               <p>Best regards, </p>
               <p className="mb-3">Ecaterina </p>
