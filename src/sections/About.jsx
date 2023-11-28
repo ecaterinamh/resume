@@ -22,7 +22,7 @@ export default function About() {
               <h2>..but also a</h2>
               <h4>deeply nature lover.</h4>
               <p>
-                I consider myself as an enthusiast, creative and curious human
+                I define myself as an enthusiast, creative and curious human
                 being. Driven by a continuous perseverance and dedication, I am
                 seeking to grow my knowledge, improve my skills and stay up to
                 date with the latest technologies. Looking forward for an

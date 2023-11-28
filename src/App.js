@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Intro from "./sections/Intro";
@@ -7,8 +8,21 @@ import History from "./sections/History";
 import Footer from "./components/Footer";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
+import Loading from "./components/Loading.jsx";
+import "./index.css";
 
-function App() {
+
+export default function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+        setTimeout(() => setLoading(false), 3300)
+    }, [])
+    if (loading) {
+        return <Loading/>
+    }
+
   return (
     <div className="App">
       <Header />
@@ -22,4 +36,3 @@ function App() {
   );
 }
 
-export default App;
