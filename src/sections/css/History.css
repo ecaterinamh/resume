@@ -1,208 +1,251 @@
 #history {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    background-color: rgb(4, 3, 3);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  background-color: rgb(4, 3, 3);
 }
 
 .container-history {
-    max-width: 70rem;
-    min-width: 25rem;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(3, 4, 4);
+  max-width: 70rem;
+  min-width: 25rem;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 4, 4);
 }
 
 .education-row {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin-bottom: 2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
-.education-row h2, .skills-row h2 {
-    color: white;
-    margin-bottom: 2rem;
+.education-row h2,
+.skills-row h2 {
+  color: white;
+  margin-bottom: 2rem;
 }
 
 .course {
-    width: 30%;
-    height: 33rem;
-    background-color: aqua;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
-    border-radius: 5px;
-    padding: 1.5rem;
-    text-align: left;
-    margin-bottom: 1.5rem;
+  width: 30%;
+  height: 28.5rem;
+  background-color: aqua;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.course > .content-course{
-    height: auto;
+.course > .content-course {
+  height: auto;
 }
 
 .content-course p {
-    text-align: left;
+  text-align: left;
 }
 
-.itschool-logo, .scoalainformalalogo, .codecademylogo {
-    width: 7rem;
-    height: 2.5rem;
-    vertical-align: bottom;
-    border-radius: unset;
+.itschool-logo,
+.scoalainformalalogo,
+.codecademylogo {
+  width: 7rem;
+  height: 2.5rem;
+  vertical-align: bottom;
+  border-radius: unset;
 }
 
-.scoalainformalalogo{
-    width: 7rem;
-    height: 3rem;
+.itschool-logo {
+  margin-top: 0.5rem;
 }
 
-.codecademylogo{
-    height: 1.5rem;
+.scoalainformalalogo {
+  width: 7rem;
+  height: 3rem;
 }
 
-ul{
-    list-style-type: none;
-    padding-left: unset;
+.codecademylogo {
+  height: 1.5rem;
+  margin-top: 1rem;
 }
 
-.skills-row{
-    padding: 0;
+ul {
+  list-style-type: none;
+  padding-left: unset;
 }
 
-.skills-row h2{
-    width:90%;
+.skills-row {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-row h2 {
+  width: 90%;
 }
 
 .skills-content {
-    width: 90%;
-    height: auto;
-    background-color: aqua;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
-    border-radius: 5px;
-    padding: 1.5rem;
-    text-align: left;
-    margin-bottom: 1.5rem;
+  width: 90%;
+  height: auto;
+  background-color: aqua;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
-.htmllogo, .csslogo, .jslogo, .reactlogo, .bootstraplogo, .gitlogo, .githublogo, .nodejslogo  {
-    width: 6rem;
-    height: 6rem;
-    border-radius: unset;
+.htmllogo,
+.csslogo,
+.jslogo,
+.reactlogo,
+.bootstraplogo,
+.gitlogo,
+.githublogo,
+.nodejslogo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: unset;
 }
 
 .skills-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  margin-bottom: 0;
 }
 
-.skills-list > p{
-    margin-bottom: 0;
+.skills-list > p {
+  margin-bottom: 0;
 }
 
 .skills-list > li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem 0.5rem;
-    filter: grayscale(1);
-    transition: all 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  filter: grayscale(1);
+  transition: all 0.2s ease-out;
 }
 
 .skills-list > li:hover {
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 1210px) {
+  .container-history {
+    max-width: 60rem;
+    min-width: 25rem;
+  }
+
+  .course {
+    width: 45%;
+    max-height: 25rem;
+    min-height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .container-history {
+    max-width: 45rem;
+    min-width: 25rem;
+  }
+
+  .course {
+    width: 100%;
+    max-height: 20rem;
+    min-height: 20rem;
+  }
+
+  .htmllogo,
+  .csslogo,
+  .jslogo,
+  .reactlogo,
+  .bootstraplogo,
+  .gitlogo,
+  .githublogo,
+  .nodejslogo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: unset;
+  }
+
+  .skills-list > li:hover {
     filter: grayscale(0);
-    position: relative;
-    top: -4px;
-    width: 7rem;
-    height: 9rem;
-
+  }
 }
 
+@media only screen and (max-width: 850px) {
+  .container-history {
+    max-width: 40em;
+    min-width: 24rem;
+  }
 
-
-@media only screen and (max-width:1210px){
-    .container-history {
-        max-width: 60rem;
-        min-width: 25rem;
-    }
-
-    
-
-    .course{
-        width: 45%;
-        max-height: 28rem;
-        min-height: 28rem;
-    }
+  .course {
+    width: 100%;
+    max-height: 20rem;
+    min-height: 20rem;
+  }
 }
 
-@media only screen and (max-width: 980px){
-    .container-history {
-        max-width: 45rem;
-        min-width: 25rem;
-    }
+@media only screen and (max-width: 600px) {
+  .course {
+    padding: 2rem;
+    width: 100%;
+    max-height: 28rem;
+    min-height: 28rem;
+  }
 
-    
-    .course{
-        width: 100%;
-        max-height: 30rem;
-        min-height: 35rem;
-    }
+  .li > img {
+    width: 4rem;
+    height: 8rem;
+  }
+
+  .htmllogo,
+  .csslogo,
+  .jslogo,
+  .reactlogo,
+  .bootstraplogo,
+  .gitlogo,
+  .githublogo,
+  .nodejslogo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: unset;
+  }
+
+  .skills-list > li {
+    padding: 0.5rem;
+  }
 }
-
-@media only screen and (max-width: 850px){
-    .container-history {
-        max-width: 40em;
-        min-width: 24rem;
-    }
-
-    .course{
-        width: 100%;
-        max-height: 28rem;
-        min-height: 28rem;
-    }
-
-
-}
-
-@media only screen and (max-width: 600px){
-    .course{
-        padding: 2rem;
-        width: 100%;
-        max-height: 32rem;
-        min-height: 32rem;
-    }
-
-    .li > img {
-        width: 4rem;
-        height: 8rem;
-    }
-
-}
-
-
-
-

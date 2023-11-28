@@ -1,47 +1,10 @@
 .App {
-    background-color: black ;
+  background-color: black;
 }
 
-.info {
-    width: 3rem;
-    height: 20rem;
-    /* background-color: rgb(98, 148, 192); */
-    z-index: 100;
-    position: fixed;
-    left: 1rem;
-    bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#whiteline {
-    width: 0.2rem;
-    height: 8rem;
-    background-color: aliceblue;
-    z-index: 100;
-}
-
-.fa-github, .fa-linkedin {
-    margin-bottom: 0.5rem;
-    color: white;
-}
-
-@media only screen and (max-width: 1100px) {
-    .info {
-        left: .7rem;
-    }
-}
-
-@media only screen and (max-width: 920px) {
-    .info {
-        left: 0.7rem;
-    }
-}
 
 @media only screen and (max-width: 768px) {
-    .info {
-        display: none;
-    }
+  .App {
+    overflow: hidden;
+  }
 }

@@ -1,0 +1,102 @@
+.footer {
+  height: 6rem;
+  width: 100%;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.572);
+  font-size: 0.8rem;
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.footer-info {
+  width: 3rem;
+  height: 20rem;
+  z-index: 100;
+  position: fixed;
+  left: 1rem;
+  bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#whiteline {
+  width: 0.2rem;
+  height: 8rem;
+  background-color: aliceblue;
+  z-index: 100;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-mobile-screen,
+.fa-envelope {
+  margin-bottom: 0.6rem;
+  color: rgb(255, 255, 255);
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-mobile-screen:hover,
+.fa-envelope:hover {
+  margin-bottom: 0.6rem;
+  color: rgba(255, 255, 255, 0.742);
+}
+
+.fa-github:hover {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .info {
+    left: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .info {
+    left: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    overflow: hidden;
+  }
+
+  .footer-info {
+    width: auto;
+    height: 2rem;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  #whiteline {
+    display: none;
+  }
+
+  .footer-info > a {
+    padding: 0 0.5rem;
+  }
+
+  .footer-info > a:hover {
+    color: rgb(255, 255, 255);
+  }
+}
