@@ -10,6 +10,8 @@ import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import Loading from "./components/Loading.jsx";
 import "./index.css";
+import Particles from './components/Particles';
+
 
 
 export default function App() {
@@ -25,6 +27,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <Particles />
       <Header />
       <Intro />
       <About />
@@ -32,6 +35,7 @@ export default function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      
     </div>
   );
 }

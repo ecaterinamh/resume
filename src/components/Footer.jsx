@@ -3,7 +3,7 @@ import "./css/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer">
       <div className="footer-info">
         <a href="tel:+40753703887">
           <i className="fas fa-mobile-screen fa-2x"></i>

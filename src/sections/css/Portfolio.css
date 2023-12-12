@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  background-color: rgb(4, 3, 3);
+  background-color: rgba(4, 3, 3, 0);
 }
 
 .container-portfolio {
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(3, 4, 4);
+  background-color: rgba(4, 3, 3, 0);
 }
 
 .portfolio-row {
@@ -35,6 +35,7 @@
   width: 100%;
   color: white;
   margin-bottom: 2rem;
+  z-index: 100;
 }
 
 .projects-list {
@@ -80,4 +81,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .line {
+    display: none;
+  }
 }

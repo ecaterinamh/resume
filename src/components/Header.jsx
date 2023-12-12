@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className="navbar">
         <h2 className="logo">
           <Nav.Link className="nav-link" href="#intro">
-            ·EM·
+            ·em·
           </Nav.Link>
         </h2>
         <Nav className="menu">

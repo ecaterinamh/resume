@@ -1,14 +1,10 @@
-.App {
-  background-color: black;
-}
-
-body{
-  background-color: black;
-}
+/* .App {
+  background-color: rgb(8, 8, 8);
+} */
 
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .App {
     overflow: hidden;
   }
-}
+} */

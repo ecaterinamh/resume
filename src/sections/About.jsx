@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import whiteandblack from "../resources/photos/profile.png";
 import resume from "../resources/documents/Resume-Mihai-Ecaterina.pdf";
+import Particles from "react-tsparticles";
 
 export default function About() {
   return (
@@ -19,8 +20,8 @@ export default function About() {
           </h2>
           <Col xs={12} md={12} xl={12} className="card">
             <div className="content-card">
-              <h2>..but also a</h2>
-              <h4>deeply nature lover.</h4>
+              <h2>..and also a deeply nature lover.</h2>
+              <br />
               <p>
                 I define myself as an enthusiast, creative and curious human
                 being. Driven by a continuous perseverance and dedication, I am

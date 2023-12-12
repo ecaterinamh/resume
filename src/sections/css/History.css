@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  background-color: rgb(4, 3, 3);
+  background-color: rgba(4, 3, 3, 0);
 }
 
 .container-history {
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(3, 4, 4);
+  background-color: rgba(4, 3, 3, 0);
 }
 
 .education-row {
@@ -34,11 +34,12 @@
 .skills-row h2 {
   color: white;
   margin-bottom: 2rem;
+  z-index: 100;
 }
 
 .course {
-  width: 30%;
-  height: 28.5rem;
+  width: 24%;
+  height: 30rem;
   background-color: aqua;
   background: linear-gradient(
     135deg,
@@ -60,12 +61,13 @@
 }
 
 .content-course p {
+  font-size: 0.9rem;
   text-align: left;
 }
 
 .itschool-logo,
 .scoalainformalalogo,
-.codecademylogo {
+.codecademylogo, .udemylogo {
   width: 7rem;
   height: 2.5rem;
   vertical-align: bottom;
@@ -77,6 +79,7 @@
 }
 
 .scoalainformalalogo {
+  margin-top: 1rem;
   width: 7rem;
   height: 3rem;
 }
@@ -84,6 +87,11 @@
 .codecademylogo {
   height: 1.5rem;
   margin-top: 1rem;
+}
+
+.udemylogo{
+  margin-top: 0.5rem;
+  height: 2.3rem;
 }
 
 ul {
@@ -184,8 +192,8 @@ ul {
 
   .course {
     width: 100%;
-    max-height: 20rem;
-    min-height: 20rem;
+    max-height: 18rem;
+    min-height: 18rem;
   }
 
   .htmllogo,
@@ -214,8 +222,8 @@ ul {
 
   .course {
     width: 100%;
-    max-height: 20rem;
-    min-height: 20rem;
+    max-height: 18rem;
+    min-height: 18rem;
   }
 }
 
@@ -223,8 +231,8 @@ ul {
   .course {
     padding: 2rem;
     width: 100%;
-    max-height: 28rem;
-    min-height: 28rem;
+    max-height: 26rem;
+    min-height: 26rem;
   }
 
   .li > img {

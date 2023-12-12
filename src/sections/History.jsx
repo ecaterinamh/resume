@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import itschoollogo from "../resources/photos/itschool-logo.png";
 import scoalainformalalogo from "../resources/photos/logo_color.png";
 import codecademylogo from "../resources/photos/Untitled.png";
+import udemylogo from '../resources/photos/Udemy-Symbol.png';
 import htmllogo from "../resources/photos/html.svg";
 import csslogo from "../resources/photos/css.svg";
 import jslogo from "../resources/photos/javascript.svg";
@@ -20,24 +21,46 @@ export default function History() {
     <div id="history">
       <Container className="container-history">
         <Row className="education-row">
-          <h2>
+          <h2 className='title'>
             {" "}
             EDUCATIONAL HISTORY <span class="line"> ______</span>
           </h2>
           <Col xs={12} md={6} xl={6} className="course">
             <div className="content-course">
-              <h4>
+              <h5>
+                {" "}
+                React- The Complete Guide 2023{" "}
+                <a
+                  className="my-2"
+                  href="https://www.udemy.com"
+                >
+                  <img
+                    className="udemylogo"
+                    src={udemylogo}
+                    alt="udemy"
+                  />
+                </a>
+              </h5>
+              <p>In progress</p>
+              <p>
+                This course is the complete guide to learn React , Hooks, Context API, React Redux, React Router, HTTP, NextJS, React Unit Testing, best practices and way more. The author is Maximilian Schwarzmüller. The course included 74 hours of online study, 38 coding exercises, assigments, articles, and projects. Is is awarded with a certificate of completion.  
+              </p>
+            </div>
+          </Col>
+          <Col xs={12} md={6} xl={6} className="course">
+            <div className="content-course">
+              <h5>
                 Web Development Course at{" "}
                 <a href="https://www.itschool.ro/cursuri/curs-web-development-online">
                   <img className="itschool-logo" src={itschoollogo} />
                 </a>
-              </h4>
-              <p>May 2023- November 2023</p>
+              </h5>
+              <p>May - November 2023</p>
               <p>
                 Successfully graduated the Web Development Online Course
                 certified and accredited by Ministry of Education with a two
                 times/week frequency, totaling more than 150 hours of online and
-                individual study, homeworks and building projects. Topics:
+                individual study, homeworks and building projects. Tech stack:
                 React, JS, NodeJS, npm, APIs, Git/Github, DOM, Bootstrap, CSS3,
                 HTML5.
               </p>
@@ -45,7 +68,7 @@ export default function History() {
           </Col>
           <Col xs={12} md={6} xl={6} className="course">
             <div className="content-course">
-              <h4>
+              <h5>
                 Intro in IT Course at{" "}
                 <a
                   href="https://scoalainformala.ro/cursuri/cursuri-it-incepatori-online/cursuri-introducere-in-it/"
@@ -57,8 +80,8 @@ export default function History() {
                     alt="scoalainformala"
                   />
                 </a>
-              </h4>
-              <p>March 2023- April 2023</p>
+              </h5>
+              <p>March - April 2023</p>
               <p>
                 How does an application come to life.Client-Server Application
                 Architecture. Multi-layer Application Architecture.Basics of
@@ -71,7 +94,7 @@ export default function History() {
           </Col>
           <Col xs={12} md={6} xl={6} className="course">
             <div className="content-course">
-              <h4>
+              <h5>
                 {" "}
                 Front-End Engineer Course at{" "}
                 <a
@@ -84,8 +107,8 @@ export default function History() {
                     alt="codecademy"
                   />
                 </a>
-              </h4>
-              <p>June 2022- December 2023</p>
+              </h5>
+              <p>June 2022 - December 2023</p>
               <p>
                 Self-paced Online Front-End Engineer Path. HTML5, CSS3,
                 developing sites locally, deploying websites. Website
