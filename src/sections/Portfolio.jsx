@@ -13,7 +13,9 @@ export default function Portfolio() {
       id: 1,
       title: "Portfolio",
       description:
-        "Portfolio is a SPA which includes a short resume about my ambitious learning path, skills and projects. In order to create it, I used React, React Bootstrap, JS, NodeJs, npm, Bootstrap, CSS3 and HTML5. ",
+        "Portfolio is a SPA which includes a short resume about my ambitious learning path, skills and projects. ",
+      techStack:
+        "React | React Bootstrap | JS | NodeJs | npm | Bootstrap | CSS3 | HTML5",
       image: desktopPreview,
       liveUrl: "https://resume-project-me.netlify.app/",
       codeUrl: "https://github.com/ecaterinamh/resume",
@@ -22,7 +24,9 @@ export default function Portfolio() {
       id: 2,
       title: "Perfume Card",
       description:
-        "This project was a challenge completed from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
+        "I completed a challenge from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
+      techStack:
+        "React | React Bootstrap | JS | NodeJs | npm | Bootstrap | CSS3 | HTML5",
       image: perfume,
       liveUrl: "https://fem-product-preview-card-solution.netlify.app/",
       codeUrl: "",
@@ -31,37 +35,23 @@ export default function Portfolio() {
       id: 3,
       title: "Perfume Card",
       description:
-        "This project was a challenge completed from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
+        "Portfolio is a SPA which includes a short resume about my ambitious learning path, skills and projects.",
+      techStack:
+        "React | React Bootstrap | JS | NodeJs | npm | Bootstrap | CSS3 | HTML5",
       image: perfume,
       liveUrl: "https://fem-product-preview-card-solution.netlify.app/",
       codeUrl: "",
     },
     {
       id: 4,
-      title: "Perfume Card",
+      title: "Portfolio",
       description:
-        "This project was a challenge completed from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
-      image: perfume,
-      liveUrl: "https://fem-product-preview-card-solution.netlify.app/",
-      codeUrl: "",
-    },
-    {
-      id: 5,
-      title: "Perfume Card",
-      description:
-        "This project was a challenge completed from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
-      image: perfume,
-      liveUrl: "https://fem-product-preview-card-solution.netlify.app/",
-      codeUrl: "",
-    },
-    {
-      id: 6,
-      title: "Perfume Card",
-      description:
-        "This project was a challenge completed from the The Front-End Mentor website. I made it by using CSS3, HTML5, flexbox.",
-      image: perfume,
-      liveUrl: "https://fem-product-preview-card-solution.netlify.app/",
-      codeUrl: "",
+        "Portfolio is a SPA which includes a short resume about my ambitious learning path, skills and projects. ",
+      techStack:
+        "React | React Bootstrap | JS | NodeJs | npm | Bootstrap | CSS3 | HTML5",
+      image: desktopPreview,
+      liveUrl: "https://resume-project-me.netlify.app/",
+      codeUrl: "https://github.com/ecaterinamh/resume",
     },
   ];
 
@@ -69,15 +59,17 @@ export default function Portfolio() {
     <div id="portfolio">
       <Container className="container-portfolio">
         <Row className="portfolio-row">
-          <h2 className="portfolio-title">
-            {" "}
-            PORTFOLIO<span class="line"> ______</span>
-          </h2>
-          <div className="projects-list">
-            {projects.map((project) => {
-              return <ProjectCard key={project.id} {...project} />;
-            })}
-          </div>
+          <Col className="d-flex flex-column align-items-center p-0">
+            <h2 className="title">
+              {" "}
+              PORTFOLIO<span class="line"> ______</span>
+            </h2>
+            <Row className="projects-list g-1">
+              {projects.map((project) => {
+                return <ProjectCard key={project.id} {...project} />;
+              })}
+            </Row>
+          </Col>
         </Row>
       </Container>
     </div>

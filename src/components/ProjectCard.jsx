@@ -1,29 +1,36 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import "./css/ProjectCard.css";
+import perfume from "../resources/photos/perfume.png";
 
 export default function ProjectCard({
   title,
   description,
+  techStack,
   image,
   liveUrl,
   codeUrl,
 }) {
   return (
-    <Col size={12} sm={6} md={3} className="project-card">
-      <div className="project-content">
-        <img className="project-image" src={image} alt="pictureproject" />
-        <div className="project-body">
-          <h4>{title}</h4>
-          <span>{description}</span>
-        </div>
-        <div className="links">
-          <a className="live" href={liveUrl} target="_blank">
-            Live Project
-          </a>
-          <a className="code" href={codeUrl} target="_blank">
-            GitHub repository
-          </a>
+    <Col sm={12} md={6} lg={6} className="project-card">
+      <div className="card-body">
+        <img className="card-image" src={image} alt="projectpicture" />
+        <div class="card-details">
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <p>{techStack}</p>
+          <div className="links">
+            <a className="live" href={liveUrl} target="_blank">
+              {" "}
+              <i className="fas fa-laptop"></i>
+              LIVE
+            </a>
+            <a className="code" href={codeUrl} target="_blank">
+              {" "}
+              <i className="fas fa-code"></i>
+              CODE
+            </a>
+          </div>
         </div>
       </div>
     </Col>

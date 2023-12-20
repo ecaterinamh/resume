@@ -5,42 +5,63 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  background-color: rgba(4, 3, 3, 0);
 }
 
 .container-history {
-  max-width: 70rem;
-  min-width: 25rem;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(4, 3, 3, 0);
 }
 
 .education-row {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0;
-  margin-bottom: 2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.education-row h2,
-.skills-row h2 {
+/* couses section */
+.timeline {
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding: 0rem;
   color: white;
-  margin-bottom: 2rem;
-  z-index: 100;
+  margin-bottom: 3rem;
 }
 
-.course {
-  width: 24%;
-  height: 30rem;
-  background-color: aqua;
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.card-course {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.content-course {
+  height: auto;
+  position: relative;
+  padding: 20px 30px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -50,14 +71,32 @@
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: white;
-  border-radius: 5px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
-.course > .content-course {
-  height: auto;
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left-container > .circle {
+  left: calc(100% - 11px);
+  top: 50%;
+}
+
+.right-container .circle {
+  right: calc(100% - 13px);
+  top: 50%;
 }
 
 .content-course p {
@@ -67,7 +106,8 @@
 
 .itschool-logo,
 .scoalainformalalogo,
-.codecademylogo, .udemylogo {
+.codecademylogo,
+.udemylogo {
   width: 7rem;
   height: 2.5rem;
   vertical-align: bottom;
@@ -89,25 +129,25 @@
   margin-top: 1rem;
 }
 
-.udemylogo{
+.udemylogo {
   margin-top: 0.5rem;
-  height: 2.3rem;
+  height: 2.1rem;
+  width: 4.6rem;
+}
+
+/* teck stack section */
+.skills-row {
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 ul {
   list-style-type: none;
   padding-left: unset;
-}
-
-.skills-row {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.skills-row h2 {
-  width: 90%;
 }
 
 .skills-content {
@@ -153,7 +193,7 @@ ul {
   margin-bottom: 0;
 }
 
-.skills-list > p {
+li > p {
   margin-bottom: 0;
 }
 
@@ -169,6 +209,7 @@ ul {
 
 .skills-list > li:hover {
   filter: grayscale(0);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1210px) {
@@ -188,12 +229,6 @@ ul {
   .container-history {
     max-width: 45rem;
     min-width: 25rem;
-  }
-
-  .course {
-    width: 100%;
-    max-height: 18rem;
-    min-height: 18rem;
   }
 
   .htmllogo,
@@ -219,22 +254,33 @@ ul {
     max-width: 40em;
     min-width: 24rem;
   }
+}
 
-  .course {
+@media only screen and (max-width: 780px) {
+  .timeline::after {
+    left: 0%;
+  }
+
+  .left-container .circle,
+  .right-container .circle {
+    left: -12px;
+  }
+
+  .card-course {
     width: 100%;
-    max-height: 18rem;
-    min-height: 18rem;
+  }
+
+  .right-container {
+    left: 0%;
+    margin: 1rem 0;
+  }
+
+  .right-container:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .course {
-    padding: 2rem;
-    width: 100%;
-    max-height: 26rem;
-    min-height: 26rem;
-  }
-
   .li > img {
     width: 4rem;
     height: 8rem;

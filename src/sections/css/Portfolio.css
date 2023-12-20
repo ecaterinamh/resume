@@ -5,41 +5,29 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  background-color: rgba(4, 3, 3, 0);
 }
 
 .container-portfolio {
-  max-width: 70rem;
-  min-width: 25rem;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   height: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-row {
+  padding: 0;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(4, 3, 3, 0);
-}
-
-.portfolio-row {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 3rem;
-}
-
-.portfolio-title {
-  width: 100%;
-  color: white;
-  margin-bottom: 2rem;
-  z-index: 100;
 }
 
 .projects-list {
-  width: 100%;
+  width: 90%;
   height: auto;
   background: linear-gradient(
     135deg,
@@ -54,11 +42,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
 }
 
+/* media queries for desktop screen*/
 @media only screen and (max-width: 1210px) {
   .container-portfolio {
     max-width: 60rem;
@@ -66,6 +56,7 @@
   }
 }
 
+/* media queries for tablet screen */
 @media only screen and (max-width: 980px) {
   .container-portfolio {
     max-width: 45rem;
@@ -74,13 +65,22 @@
 }
 
 @media only screen and (max-width: 850px) {
+  .projects-list {
+    padding: 1.5rem 1rem;
+  }
+
   .container-portfolio {
     max-width: 40rem;
     min-width: 24rem;
   }
 }
 
+/* media queries for mobile screens */
 @media only screen and (max-width: 600px) {
+  .projects-list {
+    padding: 1.5rem 1rem;
+  }
+
   .line {
     display: none;
   }

@@ -3,27 +3,21 @@ import "./css/Intro.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "bootstrap/dist/css/bootstrap.css";
 
 export default function Intro() {
   return (
     <div id="intro">
-      <div className="color">
-        <Container className="container-intro">
-          <Row classname="p-5">
-            <Col xs={12} md={12} xl={12} id="text-intro">
-              <div className="text left">
-                <h2>Welcome on my website</h2>
-                <h3>Enjoy.</h3>
-              </div>
-              <div className="text right">
-                <h2>I'm Ecaterina Mihai</h2>
-                <h3>Front-End Developer</h3>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Container className="container-intro">
+        <Row className="row">
+          <Col className="text-container left">
+            <h2>Welcome on my website</h2>
+          </Col>
+          <Col className="text-container right">
+            <h2>I'm Ecaterina Mihai</h2>
+            <h3>Front-End Developer</h3>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

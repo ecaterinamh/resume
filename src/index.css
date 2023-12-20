@@ -1,15 +1,14 @@
-@font-face {
-    font-family: 'Georgia';
-    src: url('./resources/fonts/Georgia-Script/Georgia-Script/GeorgiaScript.ttf') format('truetype');
-         
-    }
-    
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  --max-width: 80rem;
+  --min-width: 20rem;
 }
 
-html{
-    font-size: 16px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
 }

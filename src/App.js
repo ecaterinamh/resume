@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
@@ -10,7 +11,6 @@ import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import Loading from "./components/Loading.jsx";
 import "./index.css";
-import Particles from './components/Particles';
 
 
 
@@ -27,7 +27,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <Particles />
       <Header />
       <Intro />
       <About />

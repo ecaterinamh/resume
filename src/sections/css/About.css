@@ -5,35 +5,35 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  background-color: rgba(4, 3, 3, 0);
 }
 
 .container-about {
-  max-width: 70rem;
-  min-width: 25rem;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(3, 4, 4, 0);
 }
 
 .row-about {
   padding: 0;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.row-about > .title {
+.title {
   color: white;
   width: 90%;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  z-index: 100;
+  z-index: 1;
 }
 
 .card {
@@ -44,33 +44,29 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
-  padding: 2rem;
+  padding: 4rem;
   border: none;
   text-align: left;
-  background-image: url("../../resources/photos/about.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../resources/photos/cover-about.jpeg");
   opacity: 1;
   background-position: center;
   background-size: cover;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
 }
 
-.content-card {
-  width: 58%;
+.card-content {
+  width: 56%;
 }
 
-h2 {
-  font-weight: 600;
+.card-content > p {
+  margin-bottom: 2rem;
 }
 
-.content-card > p {
-  margin-bottom: 1.5rem;
-}
-
-.picture {
+/* profile picture section */
+.picture-container {
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -104,8 +100,9 @@ h2 {
   padding-bottom: 0.8rem;
 }
 
+/* buttom section */
 .button-resume {
-  width: 15rem;
+  width: 14rem;
   background: linear-gradient(to bottom, #343434, #111111, #343434);
   border: 2px solid rgb(152, 151, 151);
   border-radius: 10px;
@@ -129,6 +126,7 @@ h2 {
   box-shadow: 0 8px 20px 0 rgba(162, 162, 162, 0.37);
 }
 
+/* media queries for desktop */
 @media only screen and (max-width: 1210px) {
   .container-about {
     max-width: 60rem;
@@ -136,6 +134,7 @@ h2 {
   }
 }
 
+/* media queries for tablet screens */
 @media only screen and (max-width: 980px) {
   .container-about {
     max-width: 45rem;
@@ -143,16 +142,17 @@ h2 {
   }
 
   .card {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
-  .content-card {
+  .card-content {
     width: 90%;
   }
 
-  .picture {
+  .picture-container {
     width: 60%;
     height: auto;
+    margin: 1rem 0 1.5rem 0;
   }
 
   .profile-picture {
@@ -171,12 +171,17 @@ h2 {
 }
 
 @media only screen and (max-width: 840px) {
+  .card{
+    padding: 2.5rem 1.5rem;
+    width: 90%;
+  }
+  
   .container-about {
     max-width: 40rem;
     min-width: 24rem;
   }
 
-  .picture {
+  .picture-container {
     width: 80%;
   }
 
@@ -195,8 +200,14 @@ h2 {
   }
 }
 
+/* media queries for mobile screen */
 @media only screen and (max-width: 480px) {
-  .picture {
+  .card{
+    padding: 2.5rem 1.5rem;
+    width: 90%;
+  }
+
+  .picture-container {
     width: 95%;
   }
 
@@ -209,4 +220,9 @@ h2 {
     width: 14rem;
     height: 11rem;
   }
+
+  .button-resume{
+    margin-bottom: 0;
+  }
+
 }
