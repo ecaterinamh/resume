@@ -62,7 +62,7 @@ export default function Portfolio() {
           <Col className="d-flex flex-column align-items-center p-0">
             <h2 className="title">
               {" "}
-              PORTFOLIO<span class="line"> ______</span>
+              PORTFOLIO<span className="line"> ______</span>
             </h2>
             <Row className="projects-list g-1">
               {projects.map((project) => {

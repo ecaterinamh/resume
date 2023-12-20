@@ -15,7 +15,7 @@ export default function Contact() {
           <Col className="d-flex flex-column align-items-center p-0">
             <h2 className="title">
               {" "}
-              CONTACT<span class="line"> ______</span>
+              CONTACT<span className="line"> ______</span>
             </h2>
             <div className="contact-content">
               <div className="personal-contact">

@@ -24,7 +24,7 @@ export default function History() {
           <Col className="d-flex flex-column align-items-center p-0">
             <h2 className="title">
               {" "}
-              EDUCATIONAL HISTORY <span class="line"> ______</span>
+              EDUCATIONAL HISTORY <span className="line"> ______</span>
             </h2>
             <div className="timeline">
               <div className="card-course left-container">
@@ -130,7 +130,7 @@ export default function History() {
         <Row className="skills-row">
           <Col className="d-flex flex-column align-items-center p-0">
             <h2 className="title">
-              TECH STACK <span class="line"> ______</span>
+              TECH STACK <span className="line"> ______</span>
             </h2>
             <div className="skills-content">
               <div className="skills-items">

@@ -16,7 +16,7 @@ export default function About() {
             <h2 className="title">
               {" "}
               <span>
-                ABOUT ME<span class="line"> ______</span>
+                ABOUT ME<span className="line"> ______</span>
               </span>
             </h2>
             <div className="card">

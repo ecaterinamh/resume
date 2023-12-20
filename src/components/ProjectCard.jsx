@@ -15,7 +15,7 @@ export default function ProjectCard({
     <Col sm={12} md={6} lg={6} className="project-card">
       <div className="card-body">
         <img className="card-image" src={image} alt="projectpicture" />
-        <div class="card-details">
+        <div className="card-details">
           <h3>{title}</h3>
           <p>{description}</p>
           <p>{techStack}</p>
