@@ -197,14 +197,14 @@ input:focus, textarea:focus {
 
   .personal-contact {
     width: 100%;
-    height: 30rem;
+    height: 34rem;
     text-align: left;
     padding: 1rem 0.5rem;
   }
 
   .form-contact {
     width: 100%;
-    height: 34rem;
+    height: 36rem;
     margin-bottom: 0;
   }
 

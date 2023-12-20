@@ -93,6 +93,10 @@ a.nav-link,  a.nav-link:visited, a.nav-link:active{
     background-color: rgba(0, 0, 0, 0.9);
   }
 
+  .scrolled{
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
   .menu-icon {
     display: block;
     cursor: pointer;
