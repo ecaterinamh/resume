@@ -54,7 +54,7 @@
 .personal-contact,
 .form-contact {
   width: 50%;
-  height: 32rem;
+  height: 34rem;
   background-color: rgba(105, 105, 105, 0);
   color: white;
   border-radius: 5px;
@@ -134,6 +134,12 @@ input:focus, textarea:focus {
   margin-top: 1rem;
 }
 
+.error {
+  color: red;
+  position: relative;
+  top: -1.2rem;
+  font-size: 0.8rem;
+}
 
 /* media queries for desktop screens */
 @media only screen and (max-width: 1210px) {
@@ -218,5 +224,13 @@ input:focus, textarea:focus {
 
   span > p {
     font-size: 0.7rem;
+  }
+
+  .personal-contact > a {
+    font-size: 0.8rem;
+  }
+
+  .personal-contact > a > i {
+    color: white;
   }
 }
