@@ -55,6 +55,7 @@
 
 .round:hover {
   box-shadow: 1px 1px 10px #fff;
+  transform: scale(.9);
 }
 
 .fa-github,

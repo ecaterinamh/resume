@@ -27,8 +27,8 @@ export default function History() {
               EDUCATIONAL HISTORY <span className="line"> ______</span>
             </h2>
             <div className="timeline">
-              <div className="card-course left-container">
-                <div className="circle"></div>
+            <div className="card-course left-container">
+                <div className="point"></div>
                 <div className="content-course">
                   <h5 className="mb-3">
                     {" "}
@@ -49,7 +49,26 @@ export default function History() {
                 </div>
               </div>
               <div className="card-course right-container">
-                <div className="circle"></div>
+                <div className="point"></div>
+                <div className="content-course">
+                  <h5 className="mb-3">
+                    {" "}
+                     The Complete JavaScript Course 2024: From Zero to Expert!{" "}
+                    <a className="my-2" href="https://www.udemy.com">
+                      <img className="udemylogo" src={udemylogo} alt="udemy" />
+                    </a>
+                  </h5>
+                  <p>January 2024 - February 2024</p>
+                  <p>
+                    This course is the complete guide to learn and master JavaScript. The author is
+                    Jonas Schmedtmann. The course included 65 hours of
+                    online study, 8 coding exercises, assigments, 22 articles, and
+                    projects. Is is awarded with a certificate of completion.
+                  </p>
+                </div>
+              </div>
+              <div className="card-course left-container">
+                <div className="point"></div>
                 <div className="content-course">
                   <h5>
                     Web Development Course at{" "}
@@ -68,8 +87,8 @@ export default function History() {
                   </p>
                 </div>
               </div>
-              <div className="card-course left-container">
-                <div className="circle"></div>
+              <div className="card-course right-container">
+                <div className="point"></div>
                 <div className="content-course">
                   <h5>
                     Intro in IT Course at{" "}
@@ -95,8 +114,8 @@ export default function History() {
                   </p>
                 </div>
               </div>
-              <div className="card-course right-container">
-                <div className="circle"></div>
+              <div className="card-course left-container">
+                <div className="point"></div>
                 <div className="content-course">
                   <h5>
                     {" "}

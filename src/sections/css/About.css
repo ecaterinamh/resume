@@ -121,9 +121,10 @@
   background-color: black;
   border: 2px solid white;
   position: relative;
-  top: -4px;
+  top: -2px;
   cursor: pointer;
   box-shadow: 0 8px 20px 0 rgba(162, 162, 162, 0.37);
+  transform: scale(1.02);
 }
 
 /* media queries for desktop */

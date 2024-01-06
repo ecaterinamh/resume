@@ -102,9 +102,11 @@ export default function Contact() {
             <div className="contact-content">
               <div className="personal-contact">
                 <h2>Thank you for visiting my website! </h2>
+                <br />
                 <h6 style={{ textAlign: "left" }}>
                   I would be glad to connect with you on LinkedIn or GitHub.
                 </h6>
+                
                 <h6>
                   I'm looking for an opportunity to work in the web development
                   industry, meet new professionals, evolve and share knowledge.{" "}
@@ -119,7 +121,6 @@ export default function Contact() {
                   <i className="fas fa-envelope-open fa-1x"></i>{" "}
                   ecaterinamihai97@gmail.com
                 </a>
-
                 <div className="cover-picture"></div>
               </div>
               <div className="form-contact">
@@ -130,7 +131,7 @@ export default function Contact() {
       ) : (
                 <form onSubmit={handleSubmit} >
                   <h5 className="mb-3" style={{ textAlign: "left" }}>
-                    I really appreciate if you would like to send me a feedback.
+                    I really appreciate if you would like to send me any feedback.
                   </h5>
                   <h5 className="mb-3">Thank you!</h5>
                   <input

@@ -81,20 +81,21 @@
   left: 50%;
 }
 
-.circle {
+.point {
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
+  z-index: 2;
 }
 
-.left-container > .circle {
+.left-container > .point {
   left: calc(100% - 11px);
   top: 50%;
 }
 
-.right-container .circle {
+.right-container .point {
   right: calc(100% - 13px);
   top: 50%;
 }
@@ -262,9 +263,11 @@ li > p {
     left: 0%;
   }
 
-  .left-container .circle,
-  .right-container .circle {
-    left: -11px;
+  .left-container .point,
+  .right-container .point {
+    left: -9px;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
   .card-course {

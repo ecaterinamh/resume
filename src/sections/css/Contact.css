@@ -131,7 +131,7 @@ input:focus, textarea:focus {
   background-size: cover;
   background-position: center;
   border-radius: 5px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .error {
