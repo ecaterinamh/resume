@@ -110,7 +110,7 @@ input:focus, textarea:focus {
   transition: all 0.3s ease;
   padding: 0.3rem 0.5rem;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.837);
 }
 
 #button-form:hover {
@@ -121,6 +121,7 @@ input:focus, textarea:focus {
   cursor: pointer;
   box-shadow: 0 8px 20px 0 rgba(162, 162, 162, 0.37);
   transform: scale(1.05);
+  color: #FFF;
 }
 
 .cover-picture {

@@ -165,7 +165,7 @@ export default function Contact() {
                   <textarea placeholder="message" rows="3" ></textarea>
                   <div className="btn-container">
                     <button id="button-form" type="submit" value="submit">
-                      Submit
+                      SUBMIT
                     </button>
                   </div>
                 </form> )}
